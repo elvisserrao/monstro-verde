@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -28,15 +28,6 @@ class BlogPostTemplate extends React.Component {
             >
               {post.frontmatter.title}
             </h1>
-            <p
-              style={{
-                ...scale(-1 / 5),
-                display: `block`,
-                marginBottom: rhythm(1),
-              }}
-            >
-              {post.frontmatter.date}
-            </p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
@@ -60,16 +51,16 @@ class BlogPostTemplate extends React.Component {
             }}
           >
             <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
+              {next && (
+                <Link to={next.fields.slug} rel="next">
+                  {next.frontmatter.title} ←
                 </Link>
               )}
             </li>
             <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
+              {previous && (
+                <Link to={previous.fields.slug} rel="prev">
+                  → {previous.frontmatter.title}
                 </Link>
               )}
             </li>

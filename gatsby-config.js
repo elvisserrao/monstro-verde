@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `O incrível monstro verde comedor de pedras`,
+    author: `Elvis Serrão`,
+    description: `Clássico da literatura popular brasileira.`,
+    siteUrl: `https://elvisserrao.github.io`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `ehsj`,
     },
   },
   plugins: [
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Monstro Verde`,
+        short_name: `Monstro Verde`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -75,6 +75,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

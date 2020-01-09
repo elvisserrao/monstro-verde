@@ -56,7 +56,7 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(32),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
@@ -66,6 +66,7 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
+          &nbsp;by <a href="https://elviserrao.github.io">Elvis Serrão</a>
         </footer>
       </div>
     )
